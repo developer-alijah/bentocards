@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neumorphism Profile Card</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="min-h-screen min-h-dvh flex items-center justify-center px-4 py-6 sm:px-6 sm:py-8 bg-[#e0e5ec]">
+
+  <!-- Card -->
+  <div class="w-full max-w-[17rem] sm:max-w-[20rem] md:max-w-[22rem] lg:max-w-[24rem] 2xl:max-w-[28rem]
+              rounded-[24px] sm:rounded-[30px] bg-[#e0e5ec]
+              p-5 sm:p-7 lg:p-8 2xl:p-10
+              shadow-[-10px_-10px_20px_#ffffff,10px_10px_20px_#b8bec7]">
+
+    <!-- Top Icons -->
+    <div class="flex justify-between">
+
+      <div class="w-10 h-10 sm:w-11 sm:h-11 2xl:w-12 2xl:h-12 rounded-full bg-[#e0e5ec]
+                  shadow-[-5px_-5px_10px_#ffffff,5px_5px_10px_#b8bec7]
+                  flex items-center justify-center text-gray-700 text-sm sm:text-base 2xl:text-lg
+                  hover:shadow-[inset_-3px_-3px_6px_#ffffff,inset_3px_3px_6px_#b8bec7]
+                  cursor-pointer transition">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+
+      <div class="flex gap-2 sm:gap-3">
+
+        <div class="w-10 h-10 sm:w-11 sm:h-11 2xl:w-12 2xl:h-12 rounded-full bg-[#e0e5ec]
+                    shadow-[-5px_-5px_10px_#ffffff,5px_5px_10px_#b8bec7]
+                    flex items-center justify-center text-red-500 text-sm sm:text-base 2xl:text-lg
+                    hover:shadow-[inset_-3px_-3px_6px_#ffffff,inset_3px_3px_6px_#b8bec7]
+                    cursor-pointer transition">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="w-10 h-10 sm:w-11 sm:h-11 2xl:w-12 2xl:h-12 rounded-full bg-[#e0e5ec]
+                    shadow-[-5px_-5px_10px_#ffffff,5px_5px_10px_#b8bec7]
+                    flex items-center justify-center text-gray-700 text-sm sm:text-base 2xl:text-lg
+                    hover:shadow-[inset_-3px_-3px_6px_#ffffff,inset_3px_3px_6px_#b8bec7]
+                    cursor-pointer transition">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Profile -->
+    <div class="flex flex-col items-center mt-5 sm:mt-8">
+
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdJ2Ifw2PM7-xbA8r5P83vEA3KRbdNT6X5AbIGQAhM1aWQpHhY60AhBEc&s=10"
+        alt="Crista" class="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 2xl:w-32 2xl:h-32 rounded-full object-cover border-[6px] border-[#e0e5ec]
+               shadow-[-6px_-6px_12px_#ffffff,6px_6px_12px_#b8bec7]">
+
+      <h1 class="text-2xl sm:text-3xl 2xl:text-4xl font-bold text-gray-700 mt-4 sm:mt-5">
+        Crista
+      </h1>
+
+      <p
+        class="text-gray-500 text-center text-sm sm:text-base 2xl:text-lg mt-2 sm:mt-3 leading-6 sm:leading-7 break-words">
+        My name is Crista and I'm a graphic designer
+      </p>
+
+      <!-- Button -->
+      <button class="mt-6 sm:mt-8 px-8 sm:px-10 py-2.5 sm:py-3 rounded-full bg-[#e0e5ec]
+                     text-green-600 text-sm sm:text-base 2xl:text-lg font-bold
+                     shadow-[-6px_-6px_12px_#ffffff,6px_6px_12px_#b8bec7]
+                     hover:shadow-[inset_-4px_-4px_8px_#ffffff,inset_4px_4px_8px_#b8bec7]
+                     transition duration-300">
+        Hire Me
+      </button>
+
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex justify-evenly mt-8 sm:mt-10 lg:mt-12">
+
+      <div class="w-11 h-11 sm:w-14 sm:h-14 2xl:w-16 2xl:h-16 rounded-full bg-[#e0e5ec]
+                  shadow-[-6px_-6px_12px_#ffffff,6px_6px_12px_#b8bec7]
+                  flex items-center justify-center text-pink-500 text-xl sm:text-2xl 2xl:text-3xl
+                  hover:shadow-[inset_-4px_-4px_8px_#ffffff,inset_4px_4px_8px_#b8bec7]
+                  cursor-pointer transition">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+
+      <div class="w-11 h-11 sm:w-14 sm:h-14 2xl:w-16 2xl:h-16 rounded-full bg-[#e0e5ec]
+                  shadow-[-6px_-6px_12px_#ffffff,6px_6px_12px_#b8bec7]
+                  flex items-center justify-center text-red-500 text-xl sm:text-2xl 2xl:text-3xl
+                  hover:shadow-[inset_-4px_-4px_8px_#ffffff,inset_4px_4px_8px_#b8bec7]
+                  cursor-pointer transition">
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <div class="w-11 h-11 sm:w-14 sm:h-14 2xl:w-16 2xl:h-16 rounded-full bg-[#e0e5ec]
+                  shadow-[-6px_-6px_12px_#ffffff,6px_6px_12px_#b8bec7]
+                  flex items-center justify-center text-sky-500 text-xl sm:text-2xl 2xl:text-3xl
+                  hover:shadow-[inset_-4px_-4px_8px_#ffffff,inset_4px_4px_8px_#b8bec7]
+                  cursor-pointer transition">
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

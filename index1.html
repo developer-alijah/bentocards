@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Profile Card</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body
+  class="min-h-screen min-h-dvh flex items-center justify-center px-4 py-6 sm:px-6 sm:py-8 bg-slate-900 bg-cover bg-center bg-no-repeat bg-fixed bg-[url(https://png.pngtree.com/background/20250210/original/pngtree-landscape-water-star-space-night-astronomy-sky-galaxy-background-image-picture-image_15595094.jpg)]">
+
+  <!-- Card -->
+  <div class="w-full max-w-[17rem] sm:max-w-[20rem] md:max-w-[22rem] lg:max-w-[24rem] 2xl:max-w-[28rem]
+           rounded-3xl bg-white/20 backdrop-blur-xl border border-white/30 shadow-2xl
+           p-5 sm:p-7 lg:p-8 2xl:p-10">
+
+    <!-- Top Icons -->
+    <div class="flex justify-between">
+
+      <div
+        class="w-9 h-9 sm:w-10 sm:h-10 2xl:w-12 2xl:h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white text-sm sm:text-base 2xl:text-lg cursor-pointer hover:bg-white/30 transition">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+
+      <div class="flex gap-2 sm:gap-3">
+
+        <div
+          class="w-9 h-9 sm:w-10 sm:h-10 2xl:w-12 2xl:h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-red-500 text-sm sm:text-base 2xl:text-lg cursor-pointer hover:bg-white/30 transition">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div
+          class="w-9 h-9 sm:w-10 sm:h-10 2xl:w-12 2xl:h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white text-sm sm:text-base 2xl:text-lg cursor-pointer hover:bg-white/30 transition">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Profile -->
+    <div class="flex flex-col items-center mt-5 sm:mt-8">
+
+      <img src="https://i.pinimg.com/474x/f4/96/ff/f496ffcd0c99798743d1be81d972a815.jpg?nii=t" alt="Softie"
+        class="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 2xl:w-32 2xl:h-32 rounded-full object-cover border-4 border-white/40 shadow-lg">
+
+      <h1 class="text-2xl sm:text-3xl 2xl:text-4xl font-bold text-white mt-4 sm:mt-5">
+        Softie
+      </h1>
+
+      <p
+        class="text-white/80 text-center text-sm sm:text-base 2xl:text-lg mt-2 sm:mt-3 leading-6 sm:leading-7 break-words">
+        My name is Softie and I'm a Web Developer
+      </p>
+
+      <button
+        class="mt-6 sm:mt-8 px-6 sm:px-8 2xl:px-10 py-2.5 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm sm:text-base 2xl:text-lg font-semibold hover:bg-white/30 transition duration-300">
+        Hire Me
+      </button>
+
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex justify-evenly mt-8 sm:mt-10 lg:mt-12">
+
+      <div
+        class="w-11 h-11 sm:w-14 sm:h-14 2xl:w-16 2xl:h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-pink-500 text-xl sm:text-2xl 2xl:text-3xl hover:scale-110 transition cursor-pointer">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+
+      <div
+        class="w-11 h-11 sm:w-14 sm:h-14 2xl:w-16 2xl:h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-red-500 text-xl sm:text-2xl 2xl:text-3xl hover:scale-110 transition cursor-pointer">
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <div
+        class="w-11 h-11 sm:w-14 sm:h-14 2xl:w-16 2xl:h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-sky-400 text-xl sm:text-2xl 2xl:text-3xl hover:scale-110 transition cursor-pointer">
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

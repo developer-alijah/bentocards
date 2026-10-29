@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-950 text-gray-800 min-h-screen flex items-center justify-center p-3 sm:p-6">
+
+  <!-- Main outer frame -->
+  <div class="bg-zinc-900 p-2 sm:p-4 rounded-2xl sm:rounded-[32px] w-full max-w-[1000px] border border-zinc-800">
+
+    <!--
+      Mobile (<768px):  2 columns, fixed row height, page grows/scrolls
+      Tablet (md):      4 columns x 3 rows, 650px tall
+      Desktop (lg):     4 columns x 3 rows, 750px tall (original)
+    -->
+    <div class="grid grid-cols-2 auto-rows-[150px] sm:auto-rows-[200px] gap-2 sm:gap-3
+                md:grid-cols-4 md:grid-rows-3 md:auto-rows-auto md:h-[650px] lg:h-[750px]">
+
+      <!-- 1: tall card (left) -->
+      <div class="row-span-2 bg-pink-50 rounded-2xl p-2 sm:p-4 shadow-sm min-h-0">
+        <img src="https://i.pinimg.com/736x/5f/b6/9c/5fb69c78325e3200f16bd464e5faf5e2.jpg" alt="photo1"
+          class="w-full h-full object-cover rounded-xl sm:rounded-2xl">
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-pink-50 rounded-2xl p-2 sm:p-4 shadow-sm min-h-0">
+        <img src="https://i.pinimg.com/736x/dd/0e/c3/dd0ec31ceb7336f0aa933e7d06328d6f.jpg" alt="photo2"
+          class="w-full h-full object-cover rounded-xl sm:rounded-2xl">
+      </div>
+
+      <!-- 3 -->
+      <div class="bg-pink-50 rounded-2xl p-2 sm:p-4 shadow-sm min-h-0">
+        <img src="https://i.pinimg.com/736x/8a/98/e3/8a98e3937d4fff09cff132165d49c098.jpg" alt="photo3"
+          class="w-full h-full object-cover rounded-xl sm:rounded-2xl">
+      </div>
+
+      <!-- 4: video (full width on mobile, tall column on md+) -->
+      <div class="col-span-2 row-span-2 md:col-span-1 bg-pink-50 rounded-2xl p-2 sm:p-4 shadow-sm min-h-0">
+        <video class="w-full h-full object-cover rounded-xl sm:rounded-2xl" autoplay loop muted playsinline
+          disablepictureinpicture>
+          <source src="8ca41426be526038598f0931f66f0896.mp4" type="video/mp4" />
+          dance
+        </video>
+      </div>
+
+      <!-- 5: middle wide card with pop-out person -->
+      <div class="relative col-span-2 row-span-2 md:row-span-1 bg-pink-50 rounded-2xl p-2 sm:p-4 shadow-sm min-h-0">
+        <img src="https://i.pinimg.com/736x/26/91/31/26913107d01bd1a7b9b9596c10e8db6d.jpg" alt="photo6"
+          class="w-full h-full object-cover rounded-xl sm:rounded-2xl">
+        <img src="image-removebg-preview (32).png" alt="Person"
+          class="absolute bottom-0 left-1/2 -translate-x-1/2 z-30 w-auto max-w-[70%] h-[125%] md:h-[210%] lg:h-[220%] object-contain object-bottom drop-shadow-2xl md:hover:scale-110 transition duration-300 cursor-pointer origin-bottom pointer-events-none md:pointer-events-auto">
+      </div>
+
+      <!-- 6 -->
+      <div class="bg-pink-50 rounded-2xl p-2 sm:p-4 shadow-sm min-h-0">
+        <img src="https://i.pinimg.com/736x/76/68/b9/7668b9c8181abdcf78e5ee78b414f5aa.jpg" alt="photo4"
+          class="w-full h-full object-cover rounded-xl sm:rounded-2xl">
+      </div>
+
+      <!-- 7 -->
+      <div class="bg-pink-50 rounded-2xl p-2 sm:p-4 shadow-sm min-h-0">
+        <img src="https://i.pinimg.com/736x/2c/2c/23/2c2c23f3bb55d1181288e9f635364ea0.jpg" alt="photo5"
+          class="w-full h-full object-cover rounded-xl sm:rounded-2xl">
+      </div>
+
+      <!-- 8: bottom wide card -->
+      <div class="col-span-2 bg-pink-50 rounded-2xl p-2 sm:p-4 shadow-sm min-h-0">
+        <img src="https://i.pinimg.com/736x/57/d0/f6/57d0f6cf00dbae069ac5a1753c7a1cb7.jpg" alt="photo7"
+          class="w-full h-full object-cover rounded-xl sm:rounded-2xl">
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
